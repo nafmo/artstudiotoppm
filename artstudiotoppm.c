@@ -97,7 +97,7 @@ int convert(const char *fname1, const char *fname2)
 	{
 		// Open output file
 		output = fopen(fname2, "wb");
-		if (!output)	return 1;
+		if (!output) return 1;
 	}
 	else
 		output = stdout;
@@ -160,4 +160,5 @@ int convert(const char *fname1, const char *fname2)
 	}
 	
 	fclose(output);
+	return 0;
 }
